@@ -1,0 +1,113 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    /* overflow-y: hidden; Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    scrollbar-width: thin;
+}
+
+.hero-text{
+    top: 30%;
+}
+
+section{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 60vh;
+}
+
+.text-color{
+    color: rgba(25, 25, 88, 0.526);
+}
+
+.num{
+    font-size: 20vh;
+}
+.boxstop{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(25, 25, 88, 0.526);
+}
+
+#intro{
+    background-image: url('./asset/background_1_done.png');
+}
+
+#history{
+    background-image: url('./asset/background_2.png');
+}
+
+
+#team{
+    background-image: url('./asset/background_3.png');
+}
+
+.height{
+    height: 5%;
+}
+
+.lstsection{
+    background-color: rgba(45, 45, 122, 0.729);
+}
+
+.schedule1, .schedule2{
+    width: 40vw;
+}
+
+.schedule1{
+    top: 30%;
+    left: 5%;
+    font-size: 2vw;
+    
+}
+
+.mount1, .mount2{
+    cursor: pointer;
+}
+
+.mount1:hover, .mount2:hover{
+    /* color: rgba(25, 35, 73, 0.726); */
+    background-color: rgba(232, 232, 227, 0.702);
+}
+
+.mount1 + .schedule1 {
+    display: none;
+    
+}
+
+.mount1:hover + .schedule1 {
+    display: block;
+    
+}
+
+.mount2:hover + .schedule2 {
+    display: block;
+    
+}
+
+.schedule2{
+    
+    top: 30%;
+    left: 20%;
+    font-size: 2vw;
+    display: none;
+}
+
+footer{
+   background-color: rgba(45, 45, 122, 0.729);
+}
+
+
+
+@media (min-width: 576px) { 
+    section{
+        
+        min-height: 100vh
+    }
+ }
